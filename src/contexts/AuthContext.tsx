@@ -7,7 +7,7 @@ type User = {
     avatar: string;
 }
   
-type AuthContextTye = {
+type AuthContextType = {
     user: User | undefined;
     signInWithGoogle: () => Promise<void>;
 }
@@ -16,7 +16,7 @@ type AuthContextProviderProps = {
     children: ReactNode,
 }
   
-export const AuthContext = createContext({} as AuthContextTye)
+export const AuthContext = createContext({} as AuthContextType)
 
 export function AuthContextProvider(props: AuthContextProviderProps) {
     const [user, setUser] = useState<User>()
