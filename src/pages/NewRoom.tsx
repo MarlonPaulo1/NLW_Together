@@ -34,6 +34,7 @@ export function NewRoom() {
 
     return (
         <div id="page-auth">
+            <img src={logoImg} alt="Logo Letmeask" />
             <aside>
                 <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
                 <strong>Crie salas de Q&amp;A ao-vivo</strong>

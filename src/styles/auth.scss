@@ -3,6 +3,10 @@
     align-items: stretch;
     height: 100vh;
 
+    > img {
+        display: none;
+    }
+
     aside {
         flex: 7;
         background: #835afd;
@@ -126,6 +130,46 @@
             height: 1px;
             background: #a8a8b3;
             margin-left: 16px;
+        }
+    }
+
+    @media(max-width: 850px) {
+        display: flex; 
+        flex-direction: column;
+
+        > img {
+            display: unset;
+            align-self: center;
+            margin-top: 15px;
+        }
+
+        aside {
+            background: none;
+            color: #a8a8b3;
+            text-align: center;
+            img {
+                display: none;
+            }
+
+            p {
+                color: #a8a8b3;
+            }   
+        }
+
+        .main-content {
+            > img {
+                display: none;
+            }
+        }
+
+        form {
+                margin-bottom: 50px;
+            }
+    }
+
+    @media(max-width: 374px) {
+        aside {
+            display: none;
         }
     }
 }
